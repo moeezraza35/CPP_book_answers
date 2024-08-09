@@ -1,24 +1,24 @@
 #include<iostream>
 using namespace std;
 
-class calculator{
+class calculator{	// Calculator class
 	private:
-		float num1, num2;
+		float num1, num2;	// Two required numbers
 	public:
-		calculator(float n1, float n2){
+		calculator(float n1, float n2){	// Constructor for getting both
 			this->num1 = n1;
 			this->num2 = n2;
 		};
-		float sum(){
+		float sum(){	// Sum function
 			return num1 + num2;
 		}
-		float sub(){
+		float sub(){	// Subtraction function
 			return num1 - num2;
 		}
-		float mul(){
+		float mul(){	// Multiplication function
 			return num1 * num2;
 		}
-		float div(){
+		float div(){	// Division function
 			return num1 / num2;
 		}
 };
@@ -33,7 +33,7 @@ int main(){
 	cout << "Enter 2nd number: ";	// Prompt
 	cin >> num2;					// Input number 2
 
-	calculator myCalc(num1, num2);
+	calculator myCalc(num1, num2);	// Creating class-object
 
 	switch (op){	// Using Switch case conditional statements
 		case '+':
